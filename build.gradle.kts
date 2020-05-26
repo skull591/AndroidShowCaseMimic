@@ -1,7 +1,9 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+//import com.github.benames.gradle.versions.updates.DependencyUpdatesTask
+
 
 buildscript {
-    //TODO: move this definition to BuildSrc
+    //moved this definition to BuildSrc's object
     //ext.kotlin_version = "1.3.61"
     repositories {
         google()
@@ -10,7 +12,7 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:3.6.2")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.61")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${CoreVersion.KOTLIN}")
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
