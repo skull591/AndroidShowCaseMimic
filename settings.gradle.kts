@@ -30,6 +30,6 @@ pluginManagement{
 }
 
 //TODO: move this away
-rootProject.name="AndroidShowCaseMimic"
+//rootProject.name="AndroidShowCaseMimic"
 rootProject.buildFileName = "build.gradle.kts"
-include(":app")
+include(*ModuleDependency.getAllModules().toTypedArray())
